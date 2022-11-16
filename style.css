@@ -1,0 +1,180 @@
+/*Base Styles*/
+
+:root {
+  --primary-color: #151e27;
+  --font-size-primary: 26px;
+  --font-size-small: 16px;
+  --font-size-large: 65px;
+  --font-size-medium: 41px;
+  --line-height-primary: 120%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: var(--primary-color);
+}
+
+/*Header Content*/
+
+.header {
+  padding: 32px 0;
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-primary);
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__inner ul li {
+  display: inline-block;
+}
+
+.about li {
+  padding-right: 36px;
+  font-weight: 500;
+}
+
+.about li:last-child {
+  padding-right: 0px;
+}
+
+.contacts li {
+  font-weight: 600;
+  padding: 16px;
+}
+.contacts li:last-child {
+  padding: 0px;
+}
+
+.icons li {
+  padding-left: 26px;
+}
+
+/*Main Content*/
+
+.main {
+  line-height: var(--line-height-primary);
+  font-weight: 700;
+  font-size: var(--font-size-medium);
+  margin-bottom: 164px;
+}
+
+.main__inner {
+}
+
+.main__inner-heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: var(--font-size-large);
+  margin-bottom: 64px;
+}
+
+.main__inner-articles {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  gap: 32px;
+}
+
+.main__inner-articles-left {
+  height: 584px;
+  background: url(images/article-samsung.svg) no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: center;
+  opacity: 0.9;
+  flex-basis: 672px;
+  padding-bottom: 65px;
+}
+
+.main__inner-articles-right {
+  flex-basis: 672px;
+}
+
+.main__inner-articles-right {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 584px;
+}
+.main__inner-articles-right span {
+  text-align: center;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.main__inner-aticle-right-big {
+  background: url(images/huawei.svg) no-repeat;
+  margin-bottom: 32px;
+}
+
+.main__inner-aticle-right-small {
+  width: 50%;
+  background: url(images/laptop.svg) no-repeat;
+}
+
+.second {
+  background: url(images/watch.svg) no-repeat;
+  border-radius: 32px;
+}
+
+/*Cards */
+
+.cards {
+}
+
+.cards__inner {
+}
+
+.cards__inner-heading {
+  text-align: center;
+  font-size: var(--font-size-large);
+  margin-bottom: 104px;
+}
+
+.cards__inner-blocks {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  font-weight: 700;
+  font-size: var(--font-size-primary);
+  line-height: var(--line-height-primary);
+}
+
+.cards__inner-blocks-info {
+  border-bottom: 3px solid #d9dbdd;
+  border-radius: 32px 32px 32px 0px;
+}
+
+.cards__inner-blocks p {
+  padding: 40px 0;
+  max-width: 320px;
+}
