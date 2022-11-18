@@ -1,21 +1,20 @@
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
+  slidesPerView: "4",
+  keyboardControl: true,
+  grabCursor: true,
   loop: true,
+  spaceBetween: 32,
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".slider-next-icon",
+    prevEl: ".slider-prev-icon",
   },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
+  on: {
+    slideChange: function (swiper) {
+      document.querySelector(".slider-start").innerHTML =
+        (swiper.realIndex < 10 ? "0" : "") + (+swiper.realIndex + 1);
+    },
   },
 });
