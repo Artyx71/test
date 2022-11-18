@@ -32,7 +32,6 @@ body {
 /*Header Content*/
 
 .header {
-  padding: 32px 0;
   font-size: var(--font-size-small);
   line-height: var(--line-height-primary);
   text-transform: uppercase;
@@ -46,6 +45,8 @@ body {
 }
 
 .header__inner {
+  padding: 32px 0;
+  border-bottom: 1px solid #d9dbdd;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -96,54 +97,53 @@ body {
 }
 
 .main__inner-articles {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-areas:
+    "A A A B B "
+    "A A A C D ";
+
   color: #fff;
   gap: 32px;
-}
-
-.main__inner-articles-left {
   height: 584px;
-  background: url(images/article-samsung.svg) no-repeat;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  text-align: center;
-  opacity: 0.9;
-  flex-basis: 672px;
-  padding-bottom: 65px;
 }
 
-.main__inner-articles-right {
-  flex-basis: 672px;
-}
-
-.main__inner-articles-right {
-  display: flex;
+.main__inner-articles-item {
   text-align: center;
+  font-weight: 700;
+  font-size: var(--font-size-primary);
+  line-height: var(--line-height-primary);
+  display: flex;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  height: 584px;
-}
-.main__inner-articles-right span {
-  text-align: center;
-  justify-content: space-between;
-  align-items: flex-end;
 }
 
-.main__inner-aticle-right-big {
-  background: url(images/huawei.svg) no-repeat;
-  margin-bottom: 32px;
+.main__inner-articles-text {
 }
 
-.main__inner-aticle-right-small {
-  width: 50%;
-  background: url(images/laptop.svg) no-repeat;
+.first {
+  grid-area: A;
+  background: url(images/article-samsung.svg) no-repeat;
+  border-radius: 32px;
 }
-
 .second {
+  grid-area: B;
+  background: url(images/huawei.svg) no-repeat;
+  border-radius: 32px;
+}
+.third {
+  grid-area: C;
+  background: url(images/laptop.svg) no-repeat;
+  border-radius: 32px;
+}
+
+.fourth {
+  grid-area: D;
   background: url(images/watch.svg) no-repeat;
   border-radius: 32px;
+}
+
+.fourth .third {
+  max-width: 192px;
 }
 
 /*Cards */
@@ -152,6 +152,7 @@ body {
 }
 
 .cards__inner {
+  margin-bottom: 108px;
 }
 
 .cards__inner-heading {
@@ -161,9 +162,9 @@ body {
 }
 
 .cards__inner-blocks {
-  display: flex;
-  justify-content: space-between;
-  gap: 32px;
+  /* display: flex;
+  justify-content: space-between; */
+  /* gap: 32px; */
   font-weight: 700;
   font-size: var(--font-size-primary);
   line-height: var(--line-height-primary);

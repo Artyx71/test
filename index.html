@@ -12,10 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="normalize.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -69,22 +66,17 @@
         <div class="main__inner">
           <h2 class="main__inner-heading">Новости и наши кейсы</h2>
           <div class="main__inner-articles">
-            <article class="main__inner-articles-left">
-              <p class="main__inner-article-left-paragraph">
-                Samsung планирует производить экраны смартфонов по новой
-                технологии Eco2 OLED
-              </p>
-            </article>
-            <div class="main__inner-articles-right">
-              <article class="main__inner-aticle-right-big">
-                <span>Как работает экосистема HUAWEI</span>
-              </article>
-              <article class="main__inner-aticle-right-small">
-                <span>10 качеств планшета для рисования</span>
-              </article>
-              <article class="main__inner-aticle-right-small second">
-                <span>Возможности Galaxy Watch 4</span>
-              </article>
+            <div class="main__inner-articles-item first">
+              <p class="main__inner-article-text">Samsung планирует производить экраны смартфонов по новой технологии Eco2 OLED</p>
+            </div>
+            <div class="main__inner-articles-item second">
+              <p class="main__inner-article-text">Как работает экосистема HUAWEI</p>
+            </div>
+            <div class="main__inner-articles-item third">
+              <p class="main__inner-article-text">10 качеств планшета для рисования</p>
+            </div>
+            <div class="main__inner-articles-item fourth">
+              <p class="main__inner-article-text">Возможности Galaxy Watch 4</p>
             </div>
           </div>
         </div>
@@ -94,12 +86,17 @@
       <div class="container">
         <div class="cards__inner">
             <h2 class="cards__inner-heading">Новости</h2>
-            <div class="cards__inner-blocks">
-                <div class="cards__inner-blocks-info"><img src="images/samsung-watch.svg" alt=""><p>Samsung выпустила новое обновление ПО для смарт-часов Galaxy Watch 4 и Galaxy Watch 4 Classic</p></div>
-                <div class="cards__inner-blocks-info"><img src="images/buds.svg" alt=""><p>Samsung Galaxy Buds 2 Pro получили первое обновление ПО</p></div>
-                <div class="cards__inner-blocks-info"><img src="images/smart-tv.svg" alt=""><p>Samsung представила 98-дюймовый смарт-телевизор QN100B Neo QLED TV с 4K-экраном на 120 Гц </p></div>
-                <div class="cards__inner-blocks-info"><img src="images/galaxy-s22.svg" alt=""><p>One UI 5.0 Beta 4 теперь доступна на смартфонах Galaxy S22 в Европе и Индии                </p></div>
+            <div class="swiper">
+            <div class="cards__inner-blocks swiper-wrapper">
+                <div class="cards__inner-blocks-info swiper-slide"><img src="images/samsung-watch.svg" alt=""><p>Samsung выпустила новое обновление ПО для смарт-часов Galaxy Watch 4 и Galaxy Watch 4 Classic</p></div>
+                <div class="cards__inner-blocks-info swiper-slide"><img src="images/buds.svg" alt=""><p>Samsung Galaxy Buds 2 Pro получили первое обновление ПО</p></div>
+                <div class="cards__inner-blocks-info swiper-slide"><img src="images/smart-tv.svg" alt=""><p>Samsung представила 98-дюймовый смарт-телевизор QN100B Neo QLED TV с 4K-экраном на 120 Гц </p></div>
+                <div class="cards__inner-blocks-info swiper-slide"><img src="images/galaxy-s22.svg" alt=""><p>One UI 5.0 Beta 4 теперь доступна на смартфонах Galaxy S22 в Европе и Индии                </p></div>
             </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
           
         </div>
