@@ -170,8 +170,6 @@ body {
 .cards__inner-blocks {
   /* display: flex;
   justify-content: space-between; */
-  /* gap: 32px; */
-
   font-weight: 700;
   font-size: var(--font-size-primary);
   line-height: var(--line-height-primary);
@@ -271,6 +269,7 @@ body {
   font-size: var(--font-size-primary);
   line-height: var(--line-height-primary);
   margin-left: 32px;
+  object-fit: contain;
 }
 
 .repair__inner-blocks-info {
@@ -379,6 +378,9 @@ body {
 
 .requests {
   margin-bottom: 192px;
+  font-weight: 400;
+  font-size: var(--font-size-small);
+  line-height: 140%;
 }
 
 .requests__inner {
@@ -409,6 +411,149 @@ body {
   line-height: var(--line-height-primary);
   padding-bottom: 24px;
   border-bottom: 1px solid #bccadc;
+}
+
+.requests__list {
+  padding: 20px 0px 0px 40px;
+}
+
+.requests__list-item {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.requests__list-item:last-child {
+  margin-bottom: 0px;
+}
+
+.metro-1::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 5px;
+
+  width: 20px;
+  height: 13px;
+
+  background-image: url("images/metro-blue.svg");
+  background-size: 20px 13px;
+}
+
+.metro-2::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 5px;
+
+  width: 20px;
+  height: 13px;
+
+  background-image: url("images/metro-green.svg");
+  background-size: 20px 13px;
+}
+
+.metro-3::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 5px;
+
+  width: 20px;
+  height: 13px;
+
+  background-image: url("images/metro-orange.svg");
+  background-size: 20px 13px;
+}
+
+.phones-item {
+  margin-bottom: 15px;
+}
+
+.phones-item {
+  position: relative;
+}
+
+.phone-1::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 20px;
+
+  width: 18px;
+  height: 18px;
+
+  background-image: url("images/phone.svg");
+  background-size: 18px 18px;
+}
+
+.phones-item:last-child {
+  margin-bottom: 15px;
+}
+
+.date-item {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.date-1::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 20px;
+
+  width: 18px;
+  height: 18px;
+
+  background-image: url("images/clock.svg");
+  background-size: 18px 18px;
+}
+
+.date-item:last-child {
+  margin-bottom: 35px;
+}
+
+.credit-cards {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.credit-cards-item {
+  position: relative;
+}
+
+.mir::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 1px;
+
+  width: 22px;
+  height: 16px;
+
+  background-image: url("images/credit-card.svg");
+  background-size: 22px 16px;
+}
+
+.button {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 20px 64px 18px;
+  background: var(--primary-color);
+  border-radius: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: var(--font-size-small);
+  line-height: 100%;
+  border: 3px solid var(--primary-color);
+}
+
+.button:hover {
+  transition: 0.3s;
+  background-color: #fff;
+  color: var(--primary-color);
 }
 
 #map_canvas {
