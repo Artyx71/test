@@ -5,8 +5,6 @@ ymaps.ready(function init() {
   });
 });
 
-let placemark = new ymaps.Placemark([], {});
-
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",

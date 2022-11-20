@@ -378,17 +378,37 @@ body {
 }
 
 .requests {
+  margin-bottom: 192px;
 }
 
 .requests__inner {
   display: flex;
-  justify-content: space-between;
 }
 
-.requests__left {
+.requests__inner-left {
 }
 
-.requests__right {
+.requests__inner-right {
+  padding-left: 32px;
+}
+
+.requests__inner-right p {
+  max-width: 298px;
+}
+
+.city {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: var(--font-size-primary);
+  line-height: var(--line-height-primary);
+}
+
+.adress {
+  font-weight: 700;
+  font-size: var(--font-size-primary);
+  line-height: var(--line-height-primary);
+  padding-bottom: 24px;
+  border-bottom: 1px solid #bccadc;
 }
 
 #map_canvas {
