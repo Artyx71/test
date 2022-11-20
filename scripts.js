@@ -1,3 +1,12 @@
+ymaps.ready(function init() {
+  let map = new ymaps.Map("map_canvas", {
+    center: [55.769392399057935, 37.598786499800106],
+    zoom: 15,
+  });
+});
+
+let placemark = new ymaps.Placemark([], {});
+
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
@@ -30,7 +39,7 @@ const swiper = new Swiper(".swiper", {
       spaceBetween: 32,
     },
     // when window width is >= 640px
-    630: {
+    640: {
       slidesPerView: 4,
       spaceBetween: 32,
     },

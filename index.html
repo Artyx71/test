@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8b735668-46d3-4f9d-8222-1f0c2fafbd1d&lang=ru_RU" type="text/javascript"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -176,8 +177,32 @@
       </div>
     </section>
 
+    <section class="location">
+      <div class="container">
+        <div class="location__inner">
+          <p class="title">АДРЕСА</p>
+          <h2 class="location__heading">Наши сервисные центры</h2>
+          <ul class="location__inner-list">
+            <li class="location-list-item"><a href="#">на Тверской</a></li>
+            <li class="location-list-item"><a href="#">на Садово-Кудринской</a></li>
+            <li class="location-list-item"><a href="#">Все адреса</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="requests">
+      <div class="container">
+        <div class="requests__inner">
+          <div class="requests__inner-right"><div id="map_canvas"></div></div>
+          <div class="requests__inner-left">  </div>
+        </div>
+      </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
     <script src="scripts.js"></script>
   </body>
 </html>

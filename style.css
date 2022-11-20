@@ -164,6 +164,7 @@ body {
 .swiper {
   height: 760px;
   margin-bottom: 108px;
+  overflow: hidden;
 }
 
 .cards__inner-blocks {
@@ -329,4 +330,68 @@ body {
 .diagnosis__list-item:hover {
   background-color: #fff;
   color: var(--primary-color);
+}
+
+/* Location */
+
+.location {
+  margin-bottom: 66px;
+}
+
+.location__inner {
+}
+
+.title {
+  font-weight: 600;
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-primary);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+
+.location__heading {
+  font-weight: 700;
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-primary);
+  letter-spacing: -0.03em;
+  margin-bottom: 32px;
+}
+
+.location__inner-list {
+  display: flex;
+}
+
+.location-list-item {
+  font-weight: 500;
+  font-size: var(--font-size-small);
+  line-height: 100%;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.location-list-item :first-child {
+  margin-right: 40px;
+}
+.location-list-item:last-child {
+  margin-left: auto;
+}
+
+.requests {
+}
+
+.requests__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.requests__left {
+}
+
+.requests__right {
+}
+
+#map_canvas {
+  width: 1024px;
+  height: 650px;
 }
