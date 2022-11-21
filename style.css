@@ -134,12 +134,14 @@ body {
   grid-area: C;
   background: url(images/laptop.svg) no-repeat;
   border-radius: 32px;
+  background-size: cover;
 }
 
 .fourth {
   grid-area: D;
   background: url(images/watch.svg) no-repeat;
   border-radius: 32px;
+  background-size: cover;
 }
 
 .fourth .third {
