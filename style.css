@@ -64,7 +64,9 @@ body {
 .about li:last-child {
   padding-right: 0px;
 }
-
+.about li:first-child {
+  display: none;
+}
 .contacts li {
   font-weight: 600;
   padding: 16px;
@@ -75,6 +77,10 @@ body {
 
 .icons li {
   padding-left: 26px;
+}
+
+.icons li:first-child {
+  display: none;
 }
 
 /*Main Content*/
@@ -97,54 +103,115 @@ body {
 }
 
 .main__inner-articles {
-  display: grid;
-  grid-template-areas:
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* grid-template-areas:
     "A A A B B "
-    "A A A C D ";
+    "A A A C D "; */
 
   color: #fff;
   gap: 32px;
   height: 584px;
 }
 
+.main__inner-article-text {
+  font-weight: 700;
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-primary);
+}
+
+.articles-right {
+  flex-basis: 672px;
+}
+.articles-left {
+  flex-basis: 672px;
+}
+
 .main__inner-articles-item {
-  text-align: center;
   font-weight: 700;
   font-size: var(--font-size-primary);
   line-height: var(--line-height-primary);
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
-.main__inner-articles-text {
+.articles-left-bot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
 }
 
 .first {
-  grid-area: A;
+  /* grid-area: A; */
+  height: 584px;
   background: url(images/article-samsung.svg) no-repeat;
   border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.first span {
+  max-width: 544px;
+  margin-top: 128px;
+  padding: 128px 64px 64px 0px;
 }
 .second {
-  grid-area: B;
+  /* grid-area: B; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: url(images/huawei.svg) no-repeat;
   border-radius: 32px;
+  height: 276px;
+  margin-bottom: 32px;
+}
+
+.second span {
+  max-width: 544px;
+  text-align: left;
+  margin-top: 64px;
 }
 .third {
-  grid-area: C;
+  /* grid-area: C; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: url(images/laptop.svg) no-repeat;
   border-radius: 32px;
-  background-size: cover;
+  /* background-size: cover; */
+  height: 276px;
+  flex-basis: 320px;
+}
+
+.third span {
+  max-width: 192px;
+  font-size: var(--font-size-primary);
+  margin-top: 64px;
 }
 
 .fourth {
-  grid-area: D;
+  /* grid-area: D; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: url(images/watch.svg) no-repeat;
   border-radius: 32px;
-  background-size: cover;
+  /* background-size: cover; */
+  height: 276px;
+  flex-basis: 320px;
 }
 
-.fourth .third {
+.fourth span {
+  max-width: 192px;
+  font-size: var(--font-size-primary);
+  margin-top: 64px;
+}
+
+.fourth .third p {
   max-width: 192px;
 }
 
@@ -177,7 +244,9 @@ body {
   line-height: var(--line-height-primary);
   margin-left: 32px;
 }
-
+.cards__inner-blocks img {
+  width: 100%;
+}
 .cards__inner-blocks:last-child {
   margin-left: none;
 }
@@ -639,4 +708,81 @@ body {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+  .header__inner .about {
+    display: none;
+  }
+  .about:first-child {
+    display: none;
+  }
+  .contacts li:first-child {
+    display: none;
+  }
+  .icons li:first-child {
+    display: inline-block;
+  }
+
+  .main__inner-heading {
+    font-size: var(--font-size-medium);
+  }
+
+  .main__inner-articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cards__inner-blocks {
+    font-weight: 500;
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-primary);
+  }
+  .cards__inner-blocks p {
+    padding: 24px 0;
+    max-width: 320px;
+  }
+
+  .advertisement__inner {
+    background-size: cover;
+  }
+  .advertisement__inner p {
+    font-weight: 700;
+    max-width: 472;
+    font-size: var(--font-size-medium);
+    line-height: var(--line-height-primary);
+  }
+
+  .repair__inner img {
+    width: 100%;
+  }
+
+  .diagnosis__inner {
+    flex-direction: column;
+    gap: 32px;
+    background-size: cover;
+  }
+
+  .diagnosis__inner li {
+    padding: 32px;
+  }
+
+  .location__heading {
+    font-weight: 700;
+    font-size: var(--font-size-medium);
+    line-height: var(--line-height-primary);
+  }
+
+  .title {
+    margin-bottom: 40px;
+  }
+
+  .location__inner {
+    padding-left: 20px;
+  }
 }

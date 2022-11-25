@@ -38,6 +38,10 @@ const swiper = new Swiper(".swiper", {
     },
     // when window width is >= 640px
     640: {
+      slidesPerView: 2,
+      spaceBetween: 32,
+    },
+    800: {
       slidesPerView: 4,
       spaceBetween: 32,
     },
@@ -77,6 +81,10 @@ const repairSwiper = new Swiper(".repair-swiper", {
     },
     // when window width is >= 640px
     630: {
+      slidesPerView: 2,
+      spaceBetween: 32,
+    },
+    800: {
       slidesPerView: 4,
       spaceBetween: 32,
     },
