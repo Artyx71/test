@@ -382,7 +382,7 @@ body {
 
 .diagnosis__list-item {
   padding: 20px 64px;
-  margin-right: 100px;
+  margin-right: 32px;
   font-weight: 500;
   font-size: var(--font-size-primary);
   line-height: 100%;
