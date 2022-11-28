@@ -777,6 +777,14 @@ body {
   .location__inner {
     padding-left: 20px;
   }
+  #map_canvas {
+    width: 640px;
+    height: 650px;
+  }
+  .requests__inner {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 600px) {
@@ -897,5 +905,14 @@ body {
   }
   .main__inner-articles {
     gap: 16px;
+  }
+
+  .requests__inner {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #map_canvas {
+    width: 320px;
+    height: 650px;
   }
 }
